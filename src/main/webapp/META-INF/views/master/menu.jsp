@@ -42,6 +42,7 @@
 		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN USUARIO AUTENTIFICADO --%>
 		<acme:menu-option code="master.menu.isAutentificated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement" action="/authenticated/announcement/list"/>
+			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

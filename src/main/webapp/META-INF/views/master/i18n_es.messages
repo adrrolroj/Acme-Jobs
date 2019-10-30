@@ -61,6 +61,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.isAutentificated = Usuario autentificado
 master.menu.user-account.announcement = Lista anuncios
+master.menu.user-account.offer = Lista de ofertas
 
 ﻿# master.footer ###############################################################
 
