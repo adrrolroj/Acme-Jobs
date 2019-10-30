@@ -18,12 +18,16 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
+		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN USUARIO ANONIMO --%>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.google.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
 		</acme:menu-option>
 
+		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN ADMINISTRADOR --%>
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.announcement" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
@@ -34,6 +38,10 @@
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
+		</acme:menu-option>
+		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN USUARIO AUTENTIFICADO --%>
+		<acme:menu-option code="master.menu.isAutentificated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.user-account.announcement" action="/authenticated/announcement/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

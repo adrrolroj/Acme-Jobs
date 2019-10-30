@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.announcement;
+package acme.features.anonymous.announcement;
 
 import java.util.Calendar;
 import java.util.Collection;
@@ -11,18 +11,18 @@ import org.springframework.stereotype.Service;
 import acme.entities.announcement.Announcement;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedAnnouncementListService implements AbstractListService<Authenticated, Announcement> {
+public class AnonymousAnnouncementListService implements AbstractListService<Anonymous, Announcement> {
 
 	//Internal State -----------------------------
 	@Autowired
-	AuthenticatedAnnouncementRepository repository;
+	AnonymousAnnouncementRepository repository;
 
 
-	// AbstractListService<Authenticated, Announcement>
+	// AbstractListService<Anonymous, Announcement>
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;

@@ -1,9 +1,7 @@
 
-package acme.features.authenticated.announcement;
+package acme.features.administrator.announcement;
 
-import java.util.Calendar;
 import java.util.Collection;
-import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,18 +9,18 @@ import org.springframework.stereotype.Service;
 import acme.entities.announcement.Announcement;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedAnnouncementListService implements AbstractListService<Authenticated, Announcement> {
+public class AdministratorAnnouncementListService implements AbstractListService<Administrator, Announcement> {
 
 	//Internal State -----------------------------
 	@Autowired
-	AuthenticatedAnnouncementRepository repository;
+	AdministratorAnnouncementRepository repository;
 
 
-	// AbstractListService<Authenticated, Announcement>
+	// AbstractListService<administrator, Announcement>
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
@@ -42,12 +40,9 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	@Override
 	public Collection<Announcement> findMany(final Request<Announcement> request) {
 		assert request != null;
-		Date fecha = new Date();
-		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.MONTH, -1);
-		fecha = cal.getTime();
+
 		Collection<Announcement> result;
-		result = this.repository.findManyByMoment(fecha);
+		result = this.repository.findManyAll();
 		return result;
 	}
 
