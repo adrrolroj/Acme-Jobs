@@ -296,4 +296,38 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>889</x>
+      <y>14</y>
+      <w>210</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String {NotBlanck}
++ moment: Date{Temporal(TIMESAMP), Past}
++ moreInfo: String{URL}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>875</x>
+      <y>91</y>
+      <w>336</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlanck}
++ moment: Date{Temporal(TIMESAMP), Past}
++ deadline: Date{Temporal(TIMESAMP), Future}
++ text: String {NotBlank}
++ reward: Double {min(0)}
++ ticker: String {NotBlank, Unique, Pattern("([O-O]{1}[A-z]{4})-[1-9]{5}")}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
