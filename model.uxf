@@ -299,14 +299,14 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>889</x>
+      <x>875</x>
       <y>14</y>
       <w>210</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>Announcement
 --
-+ title: String {NotBlanck}
++ title: String {NotBlank}
 + moment: Date{Temporal(TIMESAMP), Past}
 + moreInfo: String{URL}
 + text: String {NotBlank}</panel_attributes>
@@ -322,12 +322,27 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>Offer
 --
-+ title: String {NotBlanck}
++ title: String {NotBlank}
 + moment: Date{Temporal(TIMESAMP), Past}
 + deadline: Date{Temporal(TIMESAMP), Future}
 + text: String {NotBlank}
-+ reward: Double {min(0)}
++ reward: Money {NotNull}
 + ticker: String {NotBlank, Unique, Pattern("([O-O]{1}[A-z]{4})-[1-9]{5}")}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>875</x>
+      <y>210</y>
+      <w>294</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CustomizationParameters
+--
++ spamWordsEN: String {NotBlank}
++ spamWordsES: String {NotBlank}
++ spamThreshold: Double{NotNull, min(0), max(1)}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

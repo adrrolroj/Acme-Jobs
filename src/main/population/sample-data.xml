@@ -88,6 +88,42 @@
 		<property name="reward" value="EUR 501.2"/>
 		<property name="ticker" value="OADCW-75555"/>
 	</bean>
+	<!-- CUSTOMIZATION PARAMETERS -->
+	<bean id="SpamWords01" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="Sex"/>
+		<property name="spamWordES" value="Sexo"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords02" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="hard core"/>
+		<property name="spamWordES" value="hard core"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords03" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="viagra"/>
+		<property name="spamWordES" value="viagra"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords04" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="nigeria"/>
+		<property name="spamWordES" value="nigeria"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords05" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="you’ve won"/>
+		<property name="spamWordES" value="has ganado"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords06" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="million dollar"/>
+		<property name="spamWordES" value="millon de dolares"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords07" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="cialis"/>
+		<property name="spamWordES" value="cialis"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
 </beans>
 
 
