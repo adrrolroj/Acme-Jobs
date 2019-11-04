@@ -53,7 +53,7 @@
 		<property name="moment" value="2019/10/27 10:10"/>
 		<property name="deadline" value="2019/12/27 10:10"/>
 		<property name="text" value="Description01"/>
-		<property name="reward" value="5000"/>
+		<property name="reward" value="EUR 5001.2"/>
 		<property name="ticker" value="OADCD-55555"/>
 	</bean>
 	<bean id="Offer02" class="acme.entities.offer.Offer">
@@ -61,7 +61,7 @@
 		<property name="moment" value="2019/09/21 10:10"/>
 		<property name="deadline" value="2020/10/27 10:10"/>
 		<property name="text" value="Description02"/>
-		<property name="reward" value="2320.3"/>
+		<property name="reward" value="EUR 500"/>
 		<property name="ticker" value="OCCCc-55345"/>
 	</bean>
 	<bean id="Offer03" class="acme.entities.offer.Offer">
@@ -69,7 +69,7 @@
 		<property name="moment" value="2019/10/26 10:10"/>
 		<property name="deadline" value="2019/12/30 10:10"/>
 		<property name="text" value="Description03"/>
-		<property name="reward" value="5001.2"/>
+		<property name="reward" value="EUR 5001.2"/>
 		<property name="ticker" value="OACDC-14355"/>
 	</bean>
 	<bean id="Offer04" class="acme.entities.offer.Offer">
@@ -77,7 +77,7 @@
 		<property name="moment" value="2019/10/25 10:10"/>
 		<property name="deadline" value="2019/11/27 10:10"/>
 		<property name="text" value="Description04"/>
-		<property name="reward" value="20"/>
+		<property name="reward" value="EUR 20.2"/>
 		<property name="ticker" value="OADCX-44445"/>
 	</bean>
 	<bean id="Offer05" class="acme.entities.offer.Offer">
@@ -85,7 +85,7 @@
 		<property name="moment" value="2019/10/28 10:10"/>
 		<property name="deadline" value="2019/12/28 10:10"/>
 		<property name="text" value="Description05"/>
-		<property name="reward" value="34.4"/>
+		<property name="reward" value="EUR 501.2"/>
 		<property name="ticker" value="OADCW-75555"/>
 	</bean>
 </beans>
