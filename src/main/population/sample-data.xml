@@ -88,6 +88,31 @@
 		<property name="reward" value="34.4"/>
 		<property name="ticker" value="OADCW-75555"/>
 	</bean>
+	<!-- REQUESTS -->
+	<bean id="Request01" class="acme.entities.request.Request1">
+		<property name="title" value="Titulo01"/>
+		<property name="moment" value="2019/10/27 10:10"/>
+		<property name="deadline" value="2019/12/27 10:10"/>
+		<property name="description" value="Esta es una descripción de prueba"/>
+		<property name="reward" value="EUR 501.2"/>
+		<property name="ticker" value="RABCD-91234"/>
+	</bean>
+	<bean id="Request02" class="acme.entities.request.Request1">
+		<property name="title" value="Quiero un coche de lujo"/>
+		<property name="moment" value="2019/11/03 10:10"/>
+		<property name="deadline" value="2020/03/15 13:15"/>
+		<property name="description" value="¡Un coche por favor!"/>
+		<property name="reward" value="EUR 9999.99"/>
+		<property name="ticker" value="RABGH-98534"/>
+	</bean>
+	<bean id="Request03" class="acme.entities.request.Request1">
+		<property name="title" value="Para ser feliz quiero un camión"/>
+		<property name="moment" value="2019/09/03 09:30"/>
+		<property name="deadline" value="2020/09/03 09:30"/>
+		<property name="description" value="O una caravana"/>
+		<property name="reward" value="EUR 999.99"/>
+		<property name="ticker" value="RUIGH-98744"/>
+	</bean>
 </beans>
 
 

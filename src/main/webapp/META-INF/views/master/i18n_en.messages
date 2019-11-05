@@ -63,6 +63,7 @@ master.menu.user-account.become-consumer = Become a consumer
 master.menu.isAutentificated = User autentificated
 master.menu.user-account.announcement = List announcement
 master.menu.user-account.offer = List offers
+master.menu.user-account.request = List requests
 
 # master.footer ###############################################################
 
