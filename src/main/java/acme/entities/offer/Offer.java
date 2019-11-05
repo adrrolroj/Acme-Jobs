@@ -48,6 +48,6 @@ public class Offer extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "([O-O]{1}[A-z]{4})-[1-9]{5}")
+	@Pattern(regexp = "([O-O]{1}[A-z]{4})-[0-9]{5}")
 	private String				ticker;
 }

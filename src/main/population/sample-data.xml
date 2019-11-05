@@ -86,7 +86,7 @@
 		<property name="deadline" value="2019/12/28 10:10"/>
 		<property name="text" value="Description05"/>
 		<property name="reward" value="EUR 501.2"/>
-		<property name="ticker" value="OADCW-75555"/>
+		<property name="ticker" value="OADCW-75055"/>
 	</bean>
 	<!-- CUSTOMIZATION PARAMETERS -->
 	<bean id="SpamWords01" class="acme.entities.customizationParameters.CustomizationParameters">
