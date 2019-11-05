@@ -304,6 +304,23 @@ has v</panel_attributes>
       <w>210</w>
       <h>63</h>
     </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal{TIMESTAMP}}
++ description: String {NotBlank}
++ goalBronze: String {NotBlank}
++ rewardBronze: String {NotBlank}
++ goalSilver: String {NotBlank}
++ rewardSilver: String {NotBlank}
++ goalGold: String {NotBlank}
++ rewardGold: String {NotBlank}</panel_attributes>
+     <coordinates>
+      <x>875</x>
+      <y>91</y>
+      <w>336</w>
+      <h>112</h>
+    </coordinates>
     <panel_attributes>Announcement
 --
 + title: String {NotBlank}
