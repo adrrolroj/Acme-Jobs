@@ -26,4 +26,4 @@ authenticated.challenge.list.label.rewardBronze = Bronze reward
 authenticated.challenge.list.label.goalSilver = Silver goal
 authenticated.challenge.list.label.rewardSilver = Silver reward
 authenticated.challenge.list.label.goalGold = Gold goal
-authenticated.challenge.list.label.rewardGold = Gold reward:
+authenticated.challenge.list.label.rewardGold = Gold reward
