@@ -363,4 +363,20 @@ has v</panel_attributes>
 + spamThreshold: Double{NotNull, min(0), max(1)}</panel_attributes>
     <additional_attributes/>
   </element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1250</x>
+      <y>350</y>
+      <w>300</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Investors Record
+--
++ name: String{NotBlank}
++ sector: String{NotBlank}
++ investing statement: Double{NotBlank}
++ stars: Integer{min(0),max(5)}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

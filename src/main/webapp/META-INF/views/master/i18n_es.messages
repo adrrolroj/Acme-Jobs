@@ -34,6 +34,8 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement = Lista de anuncios
 master.menu.anonymous.records = Registros de la compañia
 master.menu.anonymous.starsCR = Registros de la compañia con 5 estrellas
+master.menu.anonymous.investorRecord = Lista de registros de inversion
+master.menu.anonymous.investorRecordStars = Lista de cinco estrellas
 
 # master.menu.administrator ###################################################
 
@@ -70,8 +72,9 @@ master.menu.isAutentificated = Usuario autentificado
 master.menu.user-account.announcement = Lista anuncios
 master.menu.user-account.offer = Lista de ofertas
 master.menu.user-account.records = Registros de la compañia
+master.menu.user-account.investorRecord = Lista de registros de inversion
 
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa

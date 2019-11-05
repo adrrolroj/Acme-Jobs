@@ -24,6 +24,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>    
 			<acme:menu-suboption code="master.menu.anonymous.records" action="/anonymous/records/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.starsCR" action="/anonymous/starsCR/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.investorRecord" action="/anonymous/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.investorRecordStars" action="/anonymous/investor-recordStars/list"/>
 		</acme:menu-option>
 
 		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN ADMINISTRADOR --%>
@@ -49,6 +51,7 @@
 			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
       <acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/challenge/list"/>
 			<acme:menu-suboption code="master.menu.user-account.records" action="/authenticated/records/list"/>
+			<acme:menu-suboption code="master.menu.user-account.investorRecord" action="/authenticated/investor-record/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
