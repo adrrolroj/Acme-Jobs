@@ -299,12 +299,13 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>868</x>
-      <y>259</y>
+      <x>854</x>
+      <y>245</y>
       <w>336</w>
-      <h>112</h>
+      <h>84</h>
     </coordinates>
-    <panel_attributes>Announcement
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Announcement
 --
 + title: String {NotBlank}
 + moment: Date{Temporal(TIMESAMP), Past}
@@ -315,12 +316,13 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>868</x>
+      <x>854</x>
       <y>28</y>
       <w>336</w>
       <h>112</h>
     </coordinates>
-    <panel_attributes>Offer
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
 --
 + title: String {NotBlank}
 + moment: Date{Temporal(TIMESAMP), Past}
@@ -333,50 +335,145 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>175</x>
-      <y>280</y>
-      <w>189</w>
-      <h>126</h>
-    </coordinates>
-    <panel_attributes>Company records
---
-+ name: String {NotBlank}
-+ sector: String {NotBlank}
-+ ceo: String {NotBlank}
-+ description: String {NotBlank}
-+ website: String {URL,NotBlank}
-+ phone: String {NotBlank}
-+ mail: String {NotBlank}
-+ stars: Double {NotBlank,Min(0),Max(5)}
-+ incorporated: String
-</panel_attributes>
-    <coordinates>
-      <x>882</x>
-      <y>175</y>
+      <x>854</x>
+      <y>154</y>
       <w>294</w>
-      <h>70</h>
+      <h>77</h>
     </coordinates>
-    <panel_attributes>CustomizationParameters
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CustomizationParameters
 --
 + spamWordsEN: String {NotBlank}
 + spamWordsES: String {NotBlank}
 + spamThreshold: Double{NotNull, min(0), max(1)}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1250</x>
+      <x>602</x>
       <y>350</y>
-      <w>300</w>
+      <w>252</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++ title: String {NotBlank}
++ deadline: Date{Temporal(TIMESAMP), Future}
++ description: String {NotBlank}
++ goalGold: String {NotBlank}
++ rewardGold: String {NotBlank}
++ goalSilver: String {NotBlank}
++ rewardSilver: String {NotBlank}
++ goalBronze: String {NotBlank}
++ rewardBronce: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>889</x>
+      <y>357</y>
+      <w>189</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+InvestorRecord
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ investingStatement: Double {NotNull}
++ stars: Integer {min(0),max(5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1218</x>
+      <y>7</y>
+      <w>504</w>
       <h>140</h>
     </coordinates>
-    <panel_attributes>Investors Record
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CompanyRecord
 --
-+ name: String{NotBlank}
-+ sector: String{NotBlank}
-+ investing statement: Double{NotBlank}
-+ stars: Integer{min(0),max(5)}
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ ceo: String {NotBlank}
++ description: String {NotBlank}
++ website: String {NotBlank, URL}
++ phone: String {NotBlank, Pattern("\+\d{1,3}\s\(\d{1,4}\)\s\d{6,10}|\(\d{1,4}\)\s\d{6,10}|\+\d{1,3}\s\d{6,10}|\d{6,10}")}
++ mail: String {NotBlank, Email}
++ incorporated: String {}
++ stars: Double {Range(min = 0, max = 5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1337</x>
+      <y>196</y>
+      <w>182</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Banner
+--
++ picture: String {NotBlank, URL}
++ slogan: String {NotBlank}
++ url: String {NotBlank, URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1274</x>
+      <y>350</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+NonCommercialBanner
+--
++ jingle: String {}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1442</x>
+      <y>350</y>
+      <w>231</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CommercialBanner
+--
++ creditCard: String {NotBlank, CreditCardNumber}
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1337</x>
+      <y>259</y>
+      <w>105</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1421</x>
+      <y>259</y>
+      <w>112</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;130.0</additional_attributes>
   </element>
 </diagram>

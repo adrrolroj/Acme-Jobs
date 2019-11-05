@@ -1,3 +1,4 @@
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -38,13 +39,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `commercial_banner` (
-       `id` integer not null,
-        `version` integer not null,
-        `picture` varchar(255),
-        `slogan` varchar(255),
-        `url` varchar(255),
-        `credit_card` varchar(255),
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -60,12 +54,41 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        `credit_card` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `customization_parameters` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_threshold` double precision,
+        `spam_worden` varchar(255),
+        `spam_wordes` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `investor_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` double precision,
+        `name` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -76,12 +99,6 @@
         `slogan` varchar(255),
         `url` varchar(255),
         `jingle` varchar(255),
-    create table `customization_parameters` (
-       `id` integer not null,
-        `version` integer not null,
-        `spam_threshold` double precision,
-        `spam_worden` varchar(255),
-        `spam_wordes` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

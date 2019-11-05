@@ -2,6 +2,7 @@
 package acme.entities.records;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
@@ -43,6 +44,7 @@ public class Records extends DomainEntity {
 	@Pattern(regexp = "\\+\\d{1,3}\\s\\(\\d{1,4}\\)\\s\\d{6,10}|\\(\\d{1,4}\\)\\s\\d{6,10}|\\+\\d{1,3}\\s\\d{6,10}|\\d{6,10}")
 	private String				phone;
 
+	@Email
 	@NotBlank
 	private String				mail;
 

@@ -212,7 +212,7 @@
 		<property name="picture" value="https://www.ofrendavirgendelpilar.com/wp-content/uploads/2018/09/rosa-roja-ofrenda.jpg"/>
 		<property name="slogan" value="Flowers"/>
 		<property name="url" value="https://www.flores.com"/>
-		<property name="creditCard" value="123459HA"/>
+		<property name="creditCard" value="1111111111111111"/>
 		</bean>
 	
 		<bean id="Banner02" class="acme.entities.banner.NonCommercialBanner">

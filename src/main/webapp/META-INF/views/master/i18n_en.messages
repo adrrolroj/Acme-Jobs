@@ -34,8 +34,8 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement = List announcements
 master.menu.anonymous.records = Company records
 master.menu.anonymous.starsCR = Company records with 5 stars
-master.menu.anonymous.investorRecord = List Investor Records
-master.menu.anonymous.investorRecordStars = List Five Stars
+master.menu.anonymous.investorRecord = List investor records
+master.menu.anonymous.investorRecordStars = List investor records with 5 star
 
 # master.menu.administrator ###################################################
 
