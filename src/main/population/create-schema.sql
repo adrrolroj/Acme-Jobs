@@ -1,4 +1,3 @@
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -30,6 +29,37 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        `credit_card` varchar(255),
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal_bronze` varchar(255),
+        `goal_gold` varchar(255),
+        `goal_silver` varchar(255),
+        `reward_bronze` varchar(255),
+        `reward_gold` varchar(255),
+        `reward_silver` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -39,13 +69,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `investor_record` (
+    create table `non_commercial_banner` (
        `id` integer not null,
         `version` integer not null,
-        `investing_statement` double precision,
-        `name` varchar(255),
-        `sector` varchar(255),
-        `stars` integer,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        `jingle` varchar(255),
+    create table `customization_parameters` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_threshold` double precision,
+        `spam_worden` varchar(255),
+        `spam_wordes` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -54,7 +90,8 @@
         `version` integer not null,
         `deadline` datetime(6),
         `moment` datetime(6),
-        `reward` double precision,
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
@@ -67,6 +104,21 @@
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `records` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceo` varchar(255),
+        `description` varchar(255),
+        `incorporated` varchar(255),
+        `mail` varchar(255),
+        `name` varchar(255),
+        `phone` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
+        `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

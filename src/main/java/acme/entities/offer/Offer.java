@@ -8,11 +8,13 @@ import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Future;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
+import org.springframework.lang.NonNull;
+
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -40,12 +42,12 @@ public class Offer extends DomainEntity {
 
 	@NotBlank
 	private String				text;
-	//TODO Aun no sabemos si dejarlo como Double o cambiarlo a money
-	@Min(0)
-	private Double				reward;
+
+	@NonNull
+	private Money				reward;
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "([O-O]{1}[A-z]{4})-[1-9]{5}")
+	@Pattern(regexp = "([O-O]{1}[A-z]{4})-[0-9]{5}")
 	private String				ticker;
 }
