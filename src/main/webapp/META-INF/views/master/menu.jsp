@@ -52,6 +52,7 @@
       <acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/challenge/list"/>
 			<acme:menu-suboption code="master.menu.user-account.records" action="/authenticated/records/list"/>
 			<acme:menu-suboption code="master.menu.user-account.investorRecord" action="/authenticated/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.user-account.request" action="/authenticated/request/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

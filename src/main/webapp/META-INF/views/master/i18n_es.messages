@@ -73,6 +73,7 @@ master.menu.user-account.announcement = Lista anuncios
 master.menu.user-account.offer = Lista de ofertas
 master.menu.user-account.records = Registros de la compañia
 master.menu.user-account.investorRecord = Lista de registros de inversion
+master.menu.user-account.request = Lista de peticiones
 
 # master.footer ###############################################################
 
@@ -109,4 +110,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
+
