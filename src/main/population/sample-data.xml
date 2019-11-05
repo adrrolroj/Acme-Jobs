@@ -16,44 +16,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
-
-<bean id="challenge01" class="acme.entities.challenges.Challenge">
-	<property name="title" value="Sample challenge 01" />
-	<property name="deadline" value="2020/01/01 00:00" />
-	<property name="description" value="Login once a day for as many days as possible to receive a prize!" />
-	<property name="goalBronze" value="Login for 5 days straight!" />
-	<property name="rewardBronze" value="1 day premium" />
-	<property name="goalSilver" value="Login for 15 days straight!" />
-	<property name="rewardSilver" value="5 days premium" />
-	<property name="goalGold" value="Login for 30 days straight!" />
-	<property name="rewardGold" value="10 days premium" />
-</bean>
-
-<bean id="challenge02" class="acme.entities.challenges.Challenge">
-	<property name="title" value="Sample challenge 02" />
-	<property name="deadline" value="2019/12/05 00:00" />
-	<property name="description" value="Post as many announcements as possible to receive a prize!" />
-	<property name="goalBronze" value="Post 5 announcements!" />
-	<property name="rewardBronze" value="1 day premium" />
-	<property name="goalSilver" value="Post 10 announcements!" />
-	<property name="rewardSilver" value="5 days premium" />
-	<property name="goalGold" value="Post 20 announcements!" />
-	<property name="rewardGold" value="10 days premium" />
-</bean>
-
-<bean id="challenge03" class="acme.entities.challenges.Challenge">
-	<property name="title" value="Sample challenge 03" />
-	<property name="deadline" value="2020/12/29 00:00" />
-	<property name="description" value="Be a member for as long as possible to receive a prize!" />
-	<property name="goalBronze" value="Be a member for over a month!" />
-	<property name="rewardBronze" value="1 week premium" />
-	<property name="goalSilver" value="Be a member for over 6 months!" />
-	<property name="rewardSilver" value="3 months premium" />
-	<property name="goalGold" value="Be a member for over a year!" />
-	<property name="rewardGold" value="Free premium" />
-</bean>
-
-
 	<!-- ANNOUNCEMENTS -->
 	<bean id="Announcement01" class="acme.entities.announcement.Announcement">
 		<property name="title" value="Titulo01"/>
@@ -91,7 +53,7 @@
 		<property name="moment" value="2019/10/27 10:10"/>
 		<property name="deadline" value="2019/12/27 10:10"/>
 		<property name="text" value="Description01"/>
-		<property name="reward" value="5000"/>
+		<property name="reward" value="EUR 5001.2"/>
 		<property name="ticker" value="OADCD-55555"/>
 	</bean>
 	<bean id="Offer02" class="acme.entities.offer.Offer">
@@ -99,7 +61,7 @@
 		<property name="moment" value="2019/09/21 10:10"/>
 		<property name="deadline" value="2020/10/27 10:10"/>
 		<property name="text" value="Description02"/>
-		<property name="reward" value="2320.3"/>
+		<property name="reward" value="EUR 500"/>
 		<property name="ticker" value="OCCCc-55345"/>
 	</bean>
 	<bean id="Offer03" class="acme.entities.offer.Offer">
@@ -107,7 +69,7 @@
 		<property name="moment" value="2019/10/26 10:10"/>
 		<property name="deadline" value="2019/12/30 10:10"/>
 		<property name="text" value="Description03"/>
-		<property name="reward" value="5001.2"/>
+		<property name="reward" value="EUR 5001.2"/>
 		<property name="ticker" value="OACDC-14355"/>
 	</bean>
 	<bean id="Offer04" class="acme.entities.offer.Offer">
@@ -115,7 +77,7 @@
 		<property name="moment" value="2019/10/25 10:10"/>
 		<property name="deadline" value="2019/11/27 10:10"/>
 		<property name="text" value="Description04"/>
-		<property name="reward" value="20"/>
+		<property name="reward" value="EUR 20.2"/>
 		<property name="ticker" value="OADCX-44445"/>
 	</bean>
 	<bean id="Offer05" class="acme.entities.offer.Offer">
@@ -123,9 +85,79 @@
 		<property name="moment" value="2019/10/28 10:10"/>
 		<property name="deadline" value="2019/12/28 10:10"/>
 		<property name="text" value="Description05"/>
-		<property name="reward" value="34.4"/>
-		<property name="ticker" value="OADCW-75555"/>
+		<property name="reward" value="EUR 501.2"/>
+		<property name="ticker" value="OADCW-75055"/>
 	</bean>
+	<!-- CUSTOMIZATION PARAMETERS -->
+	<bean id="SpamWords01" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="Sex"/>
+		<property name="spamWordES" value="Sexo"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords02" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="hard core"/>
+		<property name="spamWordES" value="hard core"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords03" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="viagra"/>
+		<property name="spamWordES" value="viagra"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords04" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="nigeria"/>
+		<property name="spamWordES" value="nigeria"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords05" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="you’ve won"/>
+		<property name="spamWordES" value="has ganado"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords06" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="million dollar"/>
+		<property name="spamWordES" value="millon de dolares"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+	<bean id="SpamWords07" class="acme.entities.customizationParameters.CustomizationParameters">
+		<property name="spamWordEN" value="cialis"/>
+		<property name="spamWordES" value="cialis"/>
+		<property name="spamThreshold" value="1.0"/>
+	</bean>
+  
+<bean id="challenge01" class="acme.entities.challenges.Challenge">
+	<property name="title" value="Sample challenge 01" />
+	<property name="deadline" value="2020/01/01 00:00" />
+	<property name="description" value="Login once a day for as many days as possible to receive a prize!" />
+	<property name="goalBronze" value="Login for 5 days straight!" />
+	<property name="rewardBronze" value="1 day premium" />
+	<property name="goalSilver" value="Login for 15 days straight!" />
+	<property name="rewardSilver" value="5 days premium" />
+	<property name="goalGold" value="Login for 30 days straight!" />
+	<property name="rewardGold" value="10 days premium" />
+</bean>
+
+<bean id="challenge02" class="acme.entities.challenges.Challenge">
+	<property name="title" value="Sample challenge 02" />
+	<property name="deadline" value="2019/12/05 00:00" />
+	<property name="description" value="Post as many announcements as possible to receive a prize!" />
+	<property name="goalBronze" value="Post 5 announcements!" />
+	<property name="rewardBronze" value="1 day premium" />
+	<property name="goalSilver" value="Post 10 announcements!" />
+	<property name="rewardSilver" value="5 days premium" />
+	<property name="goalGold" value="Post 20 announcements!" />
+	<property name="rewardGold" value="10 days premium" />
+</bean>
+
+<bean id="challenge03" class="acme.entities.challenges.Challenge">
+	<property name="title" value="Sample challenge 03" />
+	<property name="deadline" value="2020/12/29 00:00" />
+	<property name="description" value="Be a member for as long as possible to receive a prize!" />
+	<property name="goalBronze" value="Be a member for over a month!" />
+	<property name="rewardBronze" value="1 week premium" />
+	<property name="goalSilver" value="Be a member for over 6 months!" />
+	<property name="rewardSilver" value="3 months premium" />
+	<property name="goalGold" value="Be a member for over a year!" />
+	<property name="rewardGold" value="Free premium" />
+</bean>
 </beans>
-
-

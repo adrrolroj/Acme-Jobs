@@ -54,12 +54,22 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `customization_parameters` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_threshold` double precision,
+        `spam_worden` varchar(255),
+        `spam_wordes` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `offer` (
        `id` integer not null,
         `version` integer not null,
         `deadline` datetime(6),
         `moment` datetime(6),
-        `reward` double precision,
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
