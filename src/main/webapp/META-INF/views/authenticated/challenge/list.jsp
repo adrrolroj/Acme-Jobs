@@ -24,5 +24,5 @@
 	<acme:list-column code="authenticated.challenge.list.label.goalSilver" path="goalSilver" width="10%"/>
 	<acme:list-column code="authenticated.challenge.list.label.rewardSilver" path="rewardSilver" width="10%"/>
 	<acme:list-column code="authenticated.challenge.list.label.goalGold" path="goalGold" width="10%"/>
-	<acme:list-column code="authenticated.challenge.list.label.rewardGold¡" path="rewardGold" width="10%"/>
+	<acme:list-column code="authenticated.challenge.list.label.rewardGold" path="rewardGold" width="10%"/>
 </acme:list>
