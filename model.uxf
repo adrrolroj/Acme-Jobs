@@ -330,4 +330,28 @@ has v</panel_attributes>
 + ticker: String {NotBlank, Unique, Pattern("([O-O]{1}[A-z]{4})-[1-9]{5}")}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>280</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Company records
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ ceo: String {NotBlank}
++ description: String {NotBlank}
++ website: String {URL,NotBlank}
++ phone: String {NotBlank}
++ mail: String {NotBlank}
++ stars: Double {NotBlank,Min(0),Max(5)}
++ incorporated: String
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

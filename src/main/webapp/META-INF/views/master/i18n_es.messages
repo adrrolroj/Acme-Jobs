@@ -30,6 +30,8 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement = Lista de anuncios
+master.menu.anonymous.records = Registros de la compañia
+master.menu.anonymous.starsCR = Registros de la compañia con 5 estrellas
 
 # master.menu.administrator ###################################################
 
@@ -37,6 +39,7 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement = Listar todos los anuncios
+master.menu.administrator.banner = Banner
 
 # master.menu.provider ########################################################
 
@@ -62,6 +65,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.isAutentificated = Usuario autentificado
 master.menu.user-account.announcement = Lista anuncios
 master.menu.user-account.offer = Lista de ofertas
+master.menu.user-account.records = Registros de la compañia
 
 ﻿# master.footer ###############################################################
 
