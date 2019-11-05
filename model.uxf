@@ -299,9 +299,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>203</x>
-      <y>329</y>
-      <w>168</w>
+      <x>182</x>
+      <y>266</y>
+      <w>189</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>Announcement
@@ -310,6 +310,27 @@ has v</panel_attributes>
 +moment: Date {Temporal{TIMESTAMP}}
 +moreInfo: String {URL}
 +text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>105</y>
+      <w>168</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++title: String {NotBlank}
++deadline: Date {Temporal{TIMESTAMP}}
++description: String {NotBlank}
++goalBronze: String {NotBlank}
++rewardBronze: String {NotBlank}
++goalSilver: String {NotBlank}
++rewardSilver: String {NotBlank}
++goalGold: String {NotBlank}
++rewardGold: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
