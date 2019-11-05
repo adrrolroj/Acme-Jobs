@@ -30,6 +30,8 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement = List announcements
+master.menu.anonymous.investorRecord = List Investor Records
+master.menu.anonymous.investorRecordStars = List Five Stars
 
 # master.menu.administrator ###################################################
 
@@ -63,6 +65,7 @@ master.menu.user-account.become-consumer = Become a consumer
 master.menu.isAutentificated = User autentificated
 master.menu.user-account.announcement = List announcement
 master.menu.user-account.offer = List offers
+master.menu.user-account.investorRecord = List Investor Records
 
 # master.footer ###############################################################
 

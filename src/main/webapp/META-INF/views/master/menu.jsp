@@ -22,6 +22,8 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.google.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.investorRecord" action="/anonymous/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.investorRecordStars" action="/anonymous/investor-recordStars/list"/>
 		</acme:menu-option>
 
 		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN ADMINISTRADOR --%>
@@ -43,6 +45,7 @@
 		<acme:menu-option code="master.menu.isAutentificated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement" action="/authenticated/announcement/list"/>
 			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.user-account.investorRecord" action="/authenticated/investor-record/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
