@@ -30,6 +30,22 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        `credit_card` varchar(255),
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -54,6 +70,13 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `non_commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        `jingle` varchar(255),
     create table `customization_parameters` (
        `id` integer not null,
         `version` integer not null,
@@ -82,6 +105,21 @@
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `records` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceo` varchar(255),
+        `description` varchar(255),
+        `incorporated` varchar(255),
+        `mail` varchar(255),
+        `name` varchar(255),
+        `phone` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
+        `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

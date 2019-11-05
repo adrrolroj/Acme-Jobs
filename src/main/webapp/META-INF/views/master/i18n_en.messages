@@ -32,6 +32,8 @@ master.menu.isAutentificated= User authenticated
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement = List announcements
+master.menu.anonymous.records = Company records
+master.menu.anonymous.starsCR = Company records with 5 stars
 
 # master.menu.administrator ###################################################
 
@@ -39,7 +41,9 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement = List all announcements
+master.menu.administrator.banner = Banner
 master.menu.administrator.customizationParameters = Customization parameters
+
 
 # master.menu.provider ########################################################
 
@@ -67,6 +71,7 @@ master.menu.user-account.announcements = Announcements
 master.menu.isAutentificated = User autentificated
 master.menu.user-account.announcement = List announcement
 master.menu.user-account.offer = List offers
+master.menu.user-account.records = Company records
 
 # master.footer ###############################################################
 
