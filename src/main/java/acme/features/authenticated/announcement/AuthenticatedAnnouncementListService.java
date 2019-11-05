@@ -1,23 +1,15 @@
-/*
- * AuthenticatedAnnouncementListService.java
- *
- * Copyright (c) 2019 Rafael Corchuelo.
- *
- * In keeping with the traditional purpose of furthering education and research, it is
- * the policy of the copyright owner to permit non-commercial use and redistribution of
- * this software. It has been tested carefully, but it is not guaranteed for any particular
- * purposes. The copyright owner does not offer any warranties or representations, nor do
- * they accept any liabilities with respect to them.
- */
+
 
 package acme.features.authenticated.announcement;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.announcement.Announcement;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -26,18 +18,16 @@ import acme.framework.services.AbstractListService;
 @Service
 public class AuthenticatedAnnouncementListService implements AbstractListService<Authenticated, Announcement> {
 
-	// Internal state ---------------------------------------------------------
 
+	//Internal State -----------------------------
 	@Autowired
-	private AuthenticatedAnnouncementRepository repository;
-
-	// AbstractListService<Authenticated, Announcement> interface ---------------------------
+	AuthenticatedAnnouncementRepository repository;
 
 
+	// AbstractListService<Authenticated, Announcement>
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
-
 		return true;
 	}
 
@@ -54,10 +44,12 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	public Collection<Announcement> findMany(final Request<Announcement> request) {
 		assert request != null;
 
+		Date fecha = new Date();
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.MONTH, -1);
+		fecha = cal.getTime();
 		Collection<Announcement> result;
-
-		result = this.repository.findManyAll();
-
+		result = this.repository.findManyByMoment(fecha);
 		return result;
 	}
 

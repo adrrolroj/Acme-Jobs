@@ -31,12 +31,14 @@ master.menu.isAutentificated= User authenticated
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
+master.menu.anonymous.announcement = List announcements
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.announcement = List all announcements
 
 # master.menu.provider ########################################################
 
@@ -57,6 +59,13 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.announcements = Announcements
+
+
+# master.menu.isAutentificated ####################################################
+
+master.menu.isAutentificated = User autentificated
+master.menu.user-account.announcement = List announcement
+master.menu.user-account.offer = List offers
 
 # master.footer ###############################################################
 
