@@ -39,9 +39,11 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+
 		<%-- COLOCAR EN ESTE MENU TODO LO QUE PUEDA VER UN USUARIO AUTENTIFICADO --%>
 		<acme:menu-option code="master.menu.isAutentificated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement" action="/authenticated/announcement/list"/>
+      <acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/challenge/list"/>
 			<acme:menu-suboption code="master.menu.user-account.offer" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 	</acme:menu-left>

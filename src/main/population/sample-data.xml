@@ -16,6 +16,44 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+
+<bean id="challenge01" class="acme.entities.challenges.Challenge">
+	<property name="title" value="Sample challenge 01" />
+	<property name="deadline" value="2020/01/01 00:00" />
+	<property name="description" value="Login once a day for as many days as possible to receive a prize!" />
+	<property name="goalBronze" value="Login for 5 days straight!" />
+	<property name="rewardBronze" value="1 day premium" />
+	<property name="goalSilver" value="Login for 15 days straight!" />
+	<property name="rewardSilver" value="5 days premium" />
+	<property name="goalGold" value="Login for 30 days straight!" />
+	<property name="rewardGold" value="10 days premium" />
+</bean>
+
+<bean id="challenge02" class="acme.entities.challenges.Challenge">
+	<property name="title" value="Sample challenge 02" />
+	<property name="deadline" value="2019/12/05 00:00" />
+	<property name="description" value="Post as many announcements as possible to receive a prize!" />
+	<property name="goalBronze" value="Post 5 announcements!" />
+	<property name="rewardBronze" value="1 day premium" />
+	<property name="goalSilver" value="Post 10 announcements!" />
+	<property name="rewardSilver" value="5 days premium" />
+	<property name="goalGold" value="Post 20 announcements!" />
+	<property name="rewardGold" value="10 days premium" />
+</bean>
+
+<bean id="challenge03" class="acme.entities.challenges.Challenge">
+	<property name="title" value="Sample challenge 03" />
+	<property name="deadline" value="2020/12/29 00:00" />
+	<property name="description" value="Be a member for as long as possible to receive a prize!" />
+	<property name="goalBronze" value="Be a member for over a month!" />
+	<property name="rewardBronze" value="1 week premium" />
+	<property name="goalSilver" value="Be a member for over 6 months!" />
+	<property name="rewardSilver" value="3 months premium" />
+	<property name="goalGold" value="Be a member for over a year!" />
+	<property name="rewardGold" value="Free premium" />
+</bean>
+
+
 	<!-- ANNOUNCEMENTS -->
 	<bean id="Announcement01" class="acme.entities.announcement.Announcement">
 		<property name="title" value="Titulo01"/>

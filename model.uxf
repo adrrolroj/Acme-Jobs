@@ -315,6 +315,22 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>336</x>
+      <y>105</y>
+      <w>168</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal{TIMESTAMP}}
++ description: String {NotBlank}
++ goalBronze: String {NotBlank}
++ rewardBronze: String {NotBlank}
++ goalSilver: String {NotBlank}
++ rewardSilver: String {NotBlank}
++ goalGold: String {NotBlank}
++ rewardGold: String {NotBlank}</panel_attributes>
       <x>875</x>
       <y>91</y>
       <w>336</w>
