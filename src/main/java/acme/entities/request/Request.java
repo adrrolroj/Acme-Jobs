@@ -21,7 +21,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Request1 extends DomainEntity {
+public class Request extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 

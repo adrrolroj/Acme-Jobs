@@ -60,7 +60,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `request1` (
+    create table `request` (
        `id` integer not null,
         `version` integer not null,
         `deadline` datetime(6),
@@ -94,8 +94,8 @@
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
 
-    alter table `request1` 
-       add constraint UK_ga53mykoe385u51drfaw165o2 unique (`ticker`);
+    alter table `request` 
+       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

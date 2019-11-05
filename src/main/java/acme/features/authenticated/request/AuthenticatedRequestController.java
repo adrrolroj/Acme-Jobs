@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.request.Request1;
+import acme.entities.request.Request;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
 @RequestMapping("/authenticated/request/")
-public class AuthenticatedRequestController extends AbstractController<Authenticated, Request1> {
+public class AuthenticatedRequestController extends AbstractController<Authenticated, Request> {
 
 	//Internal State
 	@Autowired
