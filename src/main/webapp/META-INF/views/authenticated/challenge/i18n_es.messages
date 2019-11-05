@@ -18,6 +18,8 @@ authenticated.challenge.form.label.rewardSilver = Recompensa de plata:
 authenticated.challenge.form.label.goalGold = Objetivo para oro:
 authenticated.challenge.form.label.rewardGold = Recompensa de oro:
 
+
+autenticated.challenge.form.button.return = Volver
 authenticated.challenge.list.label.title = Título
 authenticated.challenge.list.label.deadline = Fecha límte
 authenticated.challenge.list.label.description = Descripción

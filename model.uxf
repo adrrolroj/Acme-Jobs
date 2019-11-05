@@ -299,25 +299,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>875</x>
-      <y>14</y>
-      <w>210</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>Challenge
---
-+ title: String {NotBlank}
-+ deadline: Date {Temporal{TIMESTAMP}}
-+ description: String {NotBlank}
-+ goalBronze: String {NotBlank}
-+ rewardBronze: String {NotBlank}
-+ goalSilver: String {NotBlank}
-+ rewardSilver: String {NotBlank}
-+ goalGold: String {NotBlank}
-+ rewardGold: String {NotBlank}</panel_attributes>
-     <coordinates>
-      <x>875</x>
-      <y>91</y>
+      <x>868</x>
+      <y>259</y>
       <w>336</w>
       <h>112</h>
     </coordinates>
@@ -332,8 +315,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>875</x>
-      <y>91</y>
+      <x>868</x>
+      <y>28</y>
       <w>336</w>
       <h>112</h>
     </coordinates>
@@ -350,8 +333,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>875</x>
-      <y>210</y>
+      <x>882</x>
+      <y>175</y>
       <w>294</w>
       <h>70</h>
     </coordinates>
