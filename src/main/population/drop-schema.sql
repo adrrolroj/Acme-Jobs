@@ -45,9 +45,9 @@
 
     drop table if exists `provider`;
 
-    drop table if exists `request`;
-
     drop table if exists `records`;
+
+    drop table if exists `request`;
 
     drop table if exists `user_account`;
 

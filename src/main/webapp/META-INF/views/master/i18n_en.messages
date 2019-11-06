@@ -45,6 +45,7 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement = List all announcements
 master.menu.administrator.banner = Banner
 master.menu.administrator.customizationParameters = Customization parameters
+master.menu.administrator.display= Display
 
 
 # master.menu.provider ########################################################

@@ -1,0 +1,23 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.display.form.label.numberAnnouncements= Total number of announcements
+administrator.display.form.label.numberCompanyRecords = Total number of company records
+administrator.display.form.label.numberInvestorRecords = Total number of company records
+administrator.display.form.label.minRewardsActiveRequest= Minimum of the rewards of the active request
+administrator.display.form.label.maxRewardsActiveRequest= Maximum of the rewards of the active request
+administrator.display.form.label.averageRewardsActiveRequest= Average of the rewards of the active request
+administrator.display.form.label.standardDeviationRewardsActiveRequest= Standard deviation of the rewards of the active request
+administrator.display.form.label.minRewardsActiveOffers= Minimum of the rewards of the active offers
+administrator.display.form.label.maxRewardsActiveOffers= Maximum of the rewards of the active offers
+administrator.display.form.label.averageRewardsActiveOffers= Average of the rewards of the active offers
+administrator.display.form.label.standardDeviationRewardsActiveOffers= Standard deviation of the rewards of the active offers
+
+administrator.display.form.button.return = Return
