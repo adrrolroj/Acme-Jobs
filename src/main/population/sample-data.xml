@@ -206,6 +206,17 @@
 		<property name="incorporated" value="Yes"/>
 		
 		</bean>
+		<bean id="Record05" class="acme.entities.records.Records">
+		<property name="name" value="Alguien, Inc."/>
+		<property name="sector" value="Security"/>
+		<property name="ceo" value="Adri"/>
+		<property name="description" value="Description10"/>
+		<property name="website" value="https://www.yahoo.com"/>
+		<property name="phone" value="999549"/>
+		<property name="mail" value="algo@gmail.com"/>
+		<property name="incorporated" value="Yes"/>
+		
+		</bean>
 		
 		<!-- Banners -->
 		<bean id="Banner01" class="acme.entities.banner.CommercialBanner">
@@ -248,7 +259,7 @@
 	</bean>
 	<bean id="InvestorRecord05" class="acme.entities.investorRecord.InvestorRecord">
 		<property name="name" value="Titulo05"/>
-		<property name="sector" value="Sector05"/>
+		<property name="sector" value="Sector04"/>
 		<property name="investingStatement" value="35.3"/>
 		<property name="stars" value="5"/>
 	</bean>
